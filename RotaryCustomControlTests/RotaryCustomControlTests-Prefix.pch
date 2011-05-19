@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'RotaryCustomControlTests' target in the 'RotaryCustomControlTests' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+#endif

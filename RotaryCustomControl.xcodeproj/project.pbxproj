@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22822F451385618D00C1B36B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22822F441385618D00C1B36B /* UIKit.framework */; };
+		22822F471385618D00C1B36B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22822F461385618D00C1B36B /* Foundation.framework */; };
+		22822F491385618D00C1B36B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22822F481385618D00C1B36B /* CoreGraphics.framework */; };
+		22822F4F1385618D00C1B36B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 22822F4D1385618D00C1B36B /* InfoPlist.strings */; };
+		22822F521385618D00C1B36B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22822F511385618D00C1B36B /* main.m */; };
+		22822F551385618D00C1B36B /* RotaryCustomControlAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22822F541385618D00C1B36B /* RotaryCustomControlAppDelegate.m */; };
+		22822F581385618D00C1B36B /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22822F561385618D00C1B36B /* MainWindow.xib */; };
+		22822F5B1385618D00C1B36B /* RotaryCustomControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22822F5A1385618D00C1B36B /* RotaryCustomControlViewController.m */; };
+		22822F5E1385618D00C1B36B /* RotaryCustomControlViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22822F5C1385618D00C1B36B /* RotaryCustomControlViewController.xib */; };
+		22822F651385618D00C1B36B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22822F441385618D00C1B36B /* UIKit.framework */; };
+		22822F661385618D00C1B36B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22822F461385618D00C1B36B /* Foundation.framework */; };
+		22822F671385618D00C1B36B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22822F481385618D00C1B36B /* CoreGraphics.framework */; };
+		22822F6F1385618D00C1B36B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 22822F6D1385618D00C1B36B /* InfoPlist.strings */; };
+		22822F721385618D00C1B36B /* RotaryCustomControlTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 22822F711385618D00C1B36B /* RotaryCustomControlTests.h */; };
+		22822F741385618D00C1B36B /* RotaryCustomControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22822F731385618D00C1B36B /* RotaryCustomControlTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		22822F681385618D00C1B36B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22822F371385618C00C1B36B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22822F3F1385618C00C1B36B;
+			remoteInfo = RotaryCustomControl;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		22822F401385618D00C1B36B /* RotaryCustomControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RotaryCustomControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		22822F441385618D00C1B36B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		22822F461385618D00C1B36B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		22822F481385618D00C1B36B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		22822F4C1385618D00C1B36B /* RotaryCustomControl-Info.plist */ = {isa = PBXFileReference; path = "RotaryCustomControl-Info.plist"; sourceTree = "<group>"; };
+		22822F4E1385618D00C1B36B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		22822F501385618D00C1B36B /* RotaryCustomControl-Prefix.pch */ = {isa = PBXFileReference; path = "RotaryCustomControl-Prefix.pch"; sourceTree = "<group>"; };
+		22822F511385618D00C1B36B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		22822F531385618D00C1B36B /* RotaryCustomControlAppDelegate.h */ = {isa = PBXFileReference; path = RotaryCustomControlAppDelegate.h; sourceTree = "<group>"; };
+		22822F541385618D00C1B36B /* RotaryCustomControlAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RotaryCustomControlAppDelegate.m; sourceTree = "<group>"; };
+		22822F571385618D00C1B36B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		22822F591385618D00C1B36B /* RotaryCustomControlViewController.h */ = {isa = PBXFileReference; path = RotaryCustomControlViewController.h; sourceTree = "<group>"; };
+		22822F5A1385618D00C1B36B /* RotaryCustomControlViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RotaryCustomControlViewController.m; sourceTree = "<group>"; };
+		22822F5D1385618D00C1B36B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RotaryCustomControlViewController.xib; sourceTree = "<group>"; };
+		22822F641385618D00C1B36B /* RotaryCustomControlTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RotaryCustomControlTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		22822F6C1385618D00C1B36B /* RotaryCustomControlTests-Info.plist */ = {isa = PBXFileReference; path = "RotaryCustomControlTests-Info.plist"; sourceTree = "<group>"; };
+		22822F6E1385618D00C1B36B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		22822F701385618D00C1B36B /* RotaryCustomControlTests-Prefix.pch */ = {isa = PBXFileReference; path = "RotaryCustomControlTests-Prefix.pch"; sourceTree = "<group>"; };
+		22822F711385618D00C1B36B /* RotaryCustomControlTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RotaryCustomControlTests.h; sourceTree = "<group>"; };
+		22822F731385618D00C1B36B /* RotaryCustomControlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RotaryCustomControlTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22822F3D1385618C00C1B36B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22822F451385618D00C1B36B /* UIKit.framework in Frameworks */,
+				22822F471385618D00C1B36B /* Foundation.framework in Frameworks */,
+				22822F491385618D00C1B36B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22822F601385618D00C1B36B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22822F651385618D00C1B36B /* UIKit.framework in Frameworks */,
+				22822F661385618D00C1B36B /* Foundation.framework in Frameworks */,
+				22822F671385618D00C1B36B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22822F351385618C00C1B36B = {
+			isa = PBXGroup;
+			children = (
+				22822F4A1385618D00C1B36B /* RotaryCustomControl */,
+				22822F6A1385618D00C1B36B /* RotaryCustomControlTests */,
+				22822F431385618D00C1B36B /* Frameworks */,
+				22822F411385618D00C1B36B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		22822F411385618D00C1B36B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22822F401385618D00C1B36B /* RotaryCustomControl.app */,
+				22822F641385618D00C1B36B /* RotaryCustomControlTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22822F431385618D00C1B36B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22822F441385618D00C1B36B /* UIKit.framework */,
+				22822F461385618D00C1B36B /* Foundation.framework */,
+				22822F481385618D00C1B36B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		22822F4A1385618D00C1B36B /* RotaryCustomControl */ = {
+			isa = PBXGroup;
+			children = (
+				22822F531385618D00C1B36B /* RotaryCustomControlAppDelegate.h */,
+				22822F541385618D00C1B36B /* RotaryCustomControlAppDelegate.m */,
+				22822F561385618D00C1B36B /* MainWindow.xib */,
+				22822F591385618D00C1B36B /* RotaryCustomControlViewController.h */,
+				22822F5A1385618D00C1B36B /* RotaryCustomControlViewController.m */,
+				22822F5C1385618D00C1B36B /* RotaryCustomControlViewController.xib */,
+				22822F4B1385618D00C1B36B /* Supporting Files */,
+			);
+			path = RotaryCustomControl;
+			sourceTree = "<group>";
+		};
+		22822F4B1385618D00C1B36B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				22822F4C1385618D00C1B36B /* RotaryCustomControl-Info.plist */,
+				22822F4D1385618D00C1B36B /* InfoPlist.strings */,
+				22822F501385618D00C1B36B /* RotaryCustomControl-Prefix.pch */,
+				22822F511385618D00C1B36B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		22822F6A1385618D00C1B36B /* RotaryCustomControlTests */ = {
+			isa = PBXGroup;
+			children = (
+				22822F711385618D00C1B36B /* RotaryCustomControlTests.h */,
+				22822F731385618D00C1B36B /* RotaryCustomControlTests.m */,
+				22822F6B1385618D00C1B36B /* Supporting Files */,
+			);
+			path = RotaryCustomControlTests;
+			sourceTree = "<group>";
+		};
+		22822F6B1385618D00C1B36B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				22822F6C1385618D00C1B36B /* RotaryCustomControlTests-Info.plist */,
+				22822F6D1385618D00C1B36B /* InfoPlist.strings */,
+				22822F701385618D00C1B36B /* RotaryCustomControlTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		22822F3F1385618C00C1B36B /* RotaryCustomControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22822F771385618D00C1B36B /* Build configuration list for PBXNativeTarget "RotaryCustomControl" */;
+			buildPhases = (
+				22822F3C1385618C00C1B36B /* Sources */,
+				22822F3D1385618C00C1B36B /* Frameworks */,
+				22822F3E1385618C00C1B36B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RotaryCustomControl;
+			productName = RotaryCustomControl;
+			productReference = 22822F401385618D00C1B36B /* RotaryCustomControl.app */;
+			productType = "com.apple.product-type.application";
+		};
+		22822F631385618D00C1B36B /* RotaryCustomControlTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22822F7A1385618D00C1B36B /* Build configuration list for PBXNativeTarget "RotaryCustomControlTests" */;
+			buildPhases = (
+				22822F5F1385618D00C1B36B /* Sources */,
+				22822F601385618D00C1B36B /* Frameworks */,
+				22822F611385618D00C1B36B /* Resources */,
+				22822F621385618D00C1B36B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22822F691385618D00C1B36B /* PBXTargetDependency */,
+			);
+			name = RotaryCustomControlTests;
+			productName = RotaryCustomControlTests;
+			productReference = 22822F641385618D00C1B36B /* RotaryCustomControlTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22822F371385618C00C1B36B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = n/a;
+			};
+			buildConfigurationList = 22822F3A1385618C00C1B36B /* Build configuration list for PBXProject "RotaryCustomControl" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 22822F351385618C00C1B36B;
+			productRefGroup = 22822F411385618D00C1B36B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22822F3F1385618C00C1B36B /* RotaryCustomControl */,
+				22822F631385618D00C1B36B /* RotaryCustomControlTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22822F3E1385618C00C1B36B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22822F4F1385618D00C1B36B /* InfoPlist.strings in Resources */,
+				22822F581385618D00C1B36B /* MainWindow.xib in Resources */,
+				22822F5E1385618D00C1B36B /* RotaryCustomControlViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22822F611385618D00C1B36B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22822F6F1385618D00C1B36B /* InfoPlist.strings in Resources */,
+				22822F721385618D00C1B36B /* RotaryCustomControlTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		22822F621385618D00C1B36B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22822F3C1385618C00C1B36B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22822F521385618D00C1B36B /* main.m in Sources */,
+				22822F551385618D00C1B36B /* RotaryCustomControlAppDelegate.m in Sources */,
+				22822F5B1385618D00C1B36B /* RotaryCustomControlViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22822F5F1385618D00C1B36B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22822F741385618D00C1B36B /* RotaryCustomControlTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		22822F691385618D00C1B36B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22822F3F1385618C00C1B36B /* RotaryCustomControl */;
+			targetProxy = 22822F681385618D00C1B36B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		22822F4D1385618D00C1B36B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22822F4E1385618D00C1B36B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		22822F561385618D00C1B36B /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22822F571385618D00C1B36B /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		22822F5C1385618D00C1B36B /* RotaryCustomControlViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22822F5D1385618D00C1B36B /* en */,
+			);
+			name = RotaryCustomControlViewController.xib;
+			sourceTree = "<group>";
+		};
+		22822F6D1385618D00C1B36B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22822F6E1385618D00C1B36B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		22822F751385618D00C1B36B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		22822F761385618D00C1B36B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		22822F781385618D00C1B36B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RotaryCustomControl/RotaryCustomControl-Prefix.pch";
+				INFOPLIST_FILE = "RotaryCustomControl/RotaryCustomControl-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		22822F791385618D00C1B36B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RotaryCustomControl/RotaryCustomControl-Prefix.pch";
+				INFOPLIST_FILE = "RotaryCustomControl/RotaryCustomControl-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		22822F7B1385618D00C1B36B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RotaryCustomControl.app/RotaryCustomControl";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RotaryCustomControlTests/RotaryCustomControlTests-Prefix.pch";
+				INFOPLIST_FILE = "RotaryCustomControlTests/RotaryCustomControlTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		22822F7C1385618D00C1B36B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RotaryCustomControl.app/RotaryCustomControl";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RotaryCustomControlTests/RotaryCustomControlTests-Prefix.pch";
+				INFOPLIST_FILE = "RotaryCustomControlTests/RotaryCustomControlTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22822F3A1385618C00C1B36B /* Build configuration list for PBXProject "RotaryCustomControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22822F751385618D00C1B36B /* Debug */,
+				22822F761385618D00C1B36B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22822F771385618D00C1B36B /* Build configuration list for PBXNativeTarget "RotaryCustomControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22822F781385618D00C1B36B /* Debug */,
+				22822F791385618D00C1B36B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		22822F7A1385618D00C1B36B /* Build configuration list for PBXNativeTarget "RotaryCustomControlTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22822F7B1385618D00C1B36B /* Debug */,
+				22822F7C1385618D00C1B36B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 22822F371385618C00C1B36B /* Project object */;
+}
