@@ -90,7 +90,6 @@
 		22822F351385618C00C1B36B = {
 			isa = PBXGroup;
 			children = (
-				22822F82138567A000C1B36B /* QuartzCore.framework */,
 				22822F4A1385618D00C1B36B /* RotaryCustomControl */,
 				22822F6A1385618D00C1B36B /* RotaryCustomControlTests */,
 				22822F431385618D00C1B36B /* Frameworks */,
@@ -110,6 +109,7 @@
 		22822F431385618D00C1B36B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				22822F82138567A000C1B36B /* QuartzCore.framework */,
 				22822F441385618D00C1B36B /* UIKit.framework */,
 				22822F461385618D00C1B36B /* Foundation.framework */,
 				22822F481385618D00C1B36B /* CoreGraphics.framework */,
@@ -456,6 +456,7 @@
 				22822F791385618D00C1B36B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		22822F7A1385618D00C1B36B /* Build configuration list for PBXNativeTarget "RotaryCustomControlTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +465,7 @@
 				22822F7C1385618D00C1B36B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

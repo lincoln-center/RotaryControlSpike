@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface RotaryControl : UIView {
-
+    CGFloat halfWidth;
+    CGFloat halfHeight;
 }
 
 @property (nonatomic, assign) CALayer * rotatingLayer;//not retained b/c the parent layer already does

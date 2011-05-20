@@ -31,8 +31,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    CGFloat yPos = (self.view.frame.size.height - 320.f) / 2.0f;
-    CGRect rotaryControlFrame = CGRectMake(0.0f, yPos, 320.0f, 320.0f);
+    CGFloat yPos = (self.view.frame.size.height - 270.f) / 2.f;
+    CGRect rotaryControlFrame = CGRectMake(((self.view.frame.size.width - 270.f) / 2.f), yPos, 270.f, 270.f);
     RotaryControl * rotaryControl = [[[RotaryControl alloc] initWithFrame:rotaryControlFrame] autorelease];
     [[self view] addSubview:rotaryControl];
 }
