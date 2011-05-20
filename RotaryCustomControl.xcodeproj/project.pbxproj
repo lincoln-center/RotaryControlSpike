@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2266D35E13861D8F00FEBD20 /* RotaryControlRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2266D35D13861D8F00FEBD20 /* RotaryControlRenderer.m */; };
 		22822F451385618D00C1B36B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22822F441385618D00C1B36B /* UIKit.framework */; };
 		22822F471385618D00C1B36B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22822F461385618D00C1B36B /* Foundation.framework */; };
 		22822F491385618D00C1B36B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22822F481385618D00C1B36B /* CoreGraphics.framework */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2266D35C13861D8F00FEBD20 /* RotaryControlRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotaryControlRenderer.h; sourceTree = "<group>"; };
+		2266D35D13861D8F00FEBD20 /* RotaryControlRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotaryControlRenderer.m; sourceTree = "<group>"; };
 		22822F401385618D00C1B36B /* RotaryCustomControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RotaryCustomControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22822F441385618D00C1B36B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		22822F461385618D00C1B36B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -129,6 +132,8 @@
 				22822F4B1385618D00C1B36B /* Supporting Files */,
 				22822F7D1385647F00C1B36B /* RotaryControl.h */,
 				22822F7E1385647F00C1B36B /* RotaryControl.m */,
+				2266D35C13861D8F00FEBD20 /* RotaryControlRenderer.h */,
+				2266D35D13861D8F00FEBD20 /* RotaryControlRenderer.m */,
 			);
 			path = RotaryCustomControl;
 			sourceTree = "<group>";
@@ -276,6 +281,7 @@
 				22822F551385618D00C1B36B /* RotaryCustomControlAppDelegate.m in Sources */,
 				22822F5B1385618D00C1B36B /* RotaryCustomControlViewController.m in Sources */,
 				22822F7F1385647F00C1B36B /* RotaryControl.m in Sources */,
+				2266D35E13861D8F00FEBD20 /* RotaryControlRenderer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

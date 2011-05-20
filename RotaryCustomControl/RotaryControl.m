@@ -7,6 +7,7 @@
 //
 
 #import "RotaryControl.h"
+#import "RotaryControlRenderer.h"
 #import <QuartzCore/QuartzCore.h>
 
 @interface RotaryControl()
@@ -17,7 +18,7 @@
 
 @implementation RotaryControl
 
-@synthesize trackedTouchLocation, trackedTouchPtrValue, rotatingLayer;
+@synthesize trackedTouchLocation, controlRenderer, trackedTouchPtrValue, rotatingLayer;
 
 - (void)dealloc
 {
@@ -32,7 +33,16 @@
         [self setBackgroundColor:[UIColor colorWithRed:1.0f green:1.0f blue:1.0f alpha:1.0f]];
         halfWidth = self.layer.bounds.size.width / 2.f;
         halfHeight = self.layer.bounds.size.height / 2.f;
-        [[self layer] setNeedsDisplay];
+        self.controlRenderer = [RotaryControlRenderer rendererWithWidth:self.layer.bounds.size.width andHeight:self.layer.bounds.size.height];
+
+        self.rotatingLayer = [CALayer layer];
+        self.rotatingLayer.anchorPoint = CGPointMake(0.5f, 0.5f);
+        self.rotatingLayer.bounds = CGRectMake(0.f, 0.f, self.layer.bounds.size.width, self.layer.bounds.size.height);
+        [[self layer] addSublayer:self.rotatingLayer];
+        self.rotatingLayer.position = CGPointMake(halfWidth, halfHeight);
+
+        self.rotatingLayer.delegate = self.controlRenderer;
+        [[self rotatingLayer] setNeedsDisplay];
     }
     return self;
 }
@@ -113,7 +123,7 @@
                 CGFloat angleDelta = [self calculateRotationDeltaFrom:self.trackedTouchLocation to:newLocation];
                 if (angleDelta != 0.f) {
                     [CATransaction setAnimationDuration:0.f];
-                    self.layer.transform = CATransform3DRotate(self.layer.transform, angleDelta, 0.f, 0.f, 1.0f);
+                    self.rotatingLayer.transform = CATransform3DRotate(self.rotatingLayer.transform, angleDelta, 0.f, 0.f, 1.0f);
                 }
                 
                 if (!CGPointEqualToPoint(newLocation, CGPointZero)) {
@@ -132,7 +142,7 @@
     CGFloat y1 = fromLocation.y - halfHeight;
     CGFloat x2 = toLocation.x - halfWidth;
     CGFloat y2 = toLocation.y - halfHeight;
-    NSLog(@"================> %.2f, %.2f  %.2f,%.2f", x1, y1, halfWidth, halfHeight);
+    //NSLog(@"================> %.2f, %.2f  %.2f,%.2f", x1, y1, halfWidth, halfHeight);
     CGFloat l1 = sqrtf(x1*x1 + y1*y1);
     CGFloat l2 = sqrtf(x2*x2 + y2*y2);    
     if (l1 != 0.f && l2 != 0.f) {
