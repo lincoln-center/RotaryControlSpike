@@ -11,6 +11,8 @@
 
 @implementation RotaryControlRenderer
 
+static CGFloat data[720];
+
 +(RotaryControlRenderer *)rendererWithWidth:(CGFloat)width andHeight:(CGFloat)height {
     return [[[RotaryControlRenderer alloc] initWithWidth:width andHeight:height] autorelease];
 }
@@ -20,6 +22,9 @@
     if (self) {
         halfWidth = width/2.f;
         halfHeight = height/2.f;
+        for (int i=0; i<720; i++) {
+            data[i] = (rand()%100) + 20.f;
+        }
     }
     return self;
 }
@@ -33,7 +38,7 @@
     for (CGFloat i=0; i<360; i+=0.5f) {
         CGFloat angle = i *  M_PI / 180.f;
         CGMutablePathRef path = CGPathCreateMutable();
-        CGFloat dataHeight = (rand()%100) + 20.f;
+        CGFloat dataHeight = data[abs(i*2)];
         CGPoint points[2] = {{halfWidth, halfHeight}, {halfWidth + (dataHeight * cos(angle)), halfHeight + (dataHeight * sin(angle))}};
         CGPathAddLines(path, &CGAffineTransformIdentity, points, 2);
 

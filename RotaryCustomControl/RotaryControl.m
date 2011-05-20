@@ -12,7 +12,7 @@
 
 @interface RotaryControl()
 
--(CGFloat)calculateRotationDeltaFrom:(CGPoint)fromLocation to:(CGPoint)toLocation;
+-(CGFloat)calculateRotationDeltaForDragFrom:(CGPoint)fromLocation to:(CGPoint)toLocation;
 
 @end
 
@@ -22,6 +22,7 @@
 
 - (void)dealloc
 {
+    self.controlRenderer = nil;
     self.trackedTouchPtrValue = nil;
     [super dealloc];
 }
@@ -120,10 +121,11 @@
             if (touch.phase == UITouchPhaseMoved && [self.trackedTouchPtrValue isEqualToValue:[NSValue valueWithPointer:touch]]) {
                 CGPoint newLocation = [touch locationInView:self];
                 
-                CGFloat angleDelta = [self calculateRotationDeltaFrom:self.trackedTouchLocation to:newLocation];
+                CGFloat angleDelta = [self calculateRotationDeltaForDragFrom:self.trackedTouchLocation to:newLocation];
                 if (angleDelta != 0.f) {
                     [CATransaction setAnimationDuration:0.f];
                     self.rotatingLayer.transform = CATransform3DRotate(self.rotatingLayer.transform, angleDelta, 0.f, 0.f, 1.0f);
+                    [self.rotatingLayer setNeedsDisplay];
                 }
                 
                 if (!CGPointEqualToPoint(newLocation, CGPointZero)) {
@@ -135,14 +137,13 @@
 }
 
 #pragma mark - Private
--(CGFloat)calculateRotationDeltaFrom:(CGPoint)fromLocation to:(CGPoint)toLocation
+-(CGFloat)calculateRotationDeltaForDragFrom:(CGPoint)fromLocation to:(CGPoint)toLocation
 {
     CGFloat angle = 0.0f;
     CGFloat x1 = fromLocation.x - halfWidth;
     CGFloat y1 = fromLocation.y - halfHeight;
     CGFloat x2 = toLocation.x - halfWidth;
     CGFloat y2 = toLocation.y - halfHeight;
-    //NSLog(@"================> %.2f, %.2f  %.2f,%.2f", x1, y1, halfWidth, halfHeight);
     CGFloat l1 = sqrtf(x1*x1 + y1*y1);
     CGFloat l2 = sqrtf(x2*x2 + y2*y2);    
     if (l1 != 0.f && l2 != 0.f) {
