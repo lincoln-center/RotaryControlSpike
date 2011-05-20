@@ -7,6 +7,7 @@
 //
 
 #import "RotaryCustomControlViewController.h"
+#import "RotaryControl.h"
 
 @implementation RotaryCustomControlViewController
 
@@ -25,13 +26,17 @@
 
 #pragma mark - View lifecycle
 
-/*
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    CGFloat yPos = (self.view.frame.size.height - 320.f) / 2.0f;
+    CGRect rotaryControlFrame = CGRectMake(0.0f, yPos, 320.0f, 320.0f);
+    RotaryControl * rotaryControl = [[[RotaryControl alloc] initWithFrame:rotaryControlFrame] autorelease];
+    [[self view] addSubview:rotaryControl];
 }
-*/
+
 
 - (void)viewDidUnload
 {

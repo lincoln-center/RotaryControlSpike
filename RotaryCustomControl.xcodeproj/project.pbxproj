@@ -22,6 +22,8 @@
 		22822F6F1385618D00C1B36B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 22822F6D1385618D00C1B36B /* InfoPlist.strings */; };
 		22822F721385618D00C1B36B /* RotaryCustomControlTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 22822F711385618D00C1B36B /* RotaryCustomControlTests.h */; };
 		22822F741385618D00C1B36B /* RotaryCustomControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22822F731385618D00C1B36B /* RotaryCustomControlTests.m */; };
+		22822F7F1385647F00C1B36B /* RotaryControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 22822F7E1385647F00C1B36B /* RotaryControl.m */; };
+		22822F83138567A000C1B36B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22822F82138567A000C1B36B /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,22 +41,25 @@
 		22822F441385618D00C1B36B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		22822F461385618D00C1B36B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		22822F481385618D00C1B36B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		22822F4C1385618D00C1B36B /* RotaryCustomControl-Info.plist */ = {isa = PBXFileReference; path = "RotaryCustomControl-Info.plist"; sourceTree = "<group>"; };
+		22822F4C1385618D00C1B36B /* RotaryCustomControl-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RotaryCustomControl-Info.plist"; sourceTree = "<group>"; };
 		22822F4E1385618D00C1B36B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		22822F501385618D00C1B36B /* RotaryCustomControl-Prefix.pch */ = {isa = PBXFileReference; path = "RotaryCustomControl-Prefix.pch"; sourceTree = "<group>"; };
+		22822F501385618D00C1B36B /* RotaryCustomControl-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RotaryCustomControl-Prefix.pch"; sourceTree = "<group>"; };
 		22822F511385618D00C1B36B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		22822F531385618D00C1B36B /* RotaryCustomControlAppDelegate.h */ = {isa = PBXFileReference; path = RotaryCustomControlAppDelegate.h; sourceTree = "<group>"; };
+		22822F531385618D00C1B36B /* RotaryCustomControlAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RotaryCustomControlAppDelegate.h; sourceTree = "<group>"; };
 		22822F541385618D00C1B36B /* RotaryCustomControlAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RotaryCustomControlAppDelegate.m; sourceTree = "<group>"; };
 		22822F571385618D00C1B36B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		22822F591385618D00C1B36B /* RotaryCustomControlViewController.h */ = {isa = PBXFileReference; path = RotaryCustomControlViewController.h; sourceTree = "<group>"; };
+		22822F591385618D00C1B36B /* RotaryCustomControlViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RotaryCustomControlViewController.h; sourceTree = "<group>"; };
 		22822F5A1385618D00C1B36B /* RotaryCustomControlViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RotaryCustomControlViewController.m; sourceTree = "<group>"; };
 		22822F5D1385618D00C1B36B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RotaryCustomControlViewController.xib; sourceTree = "<group>"; };
 		22822F641385618D00C1B36B /* RotaryCustomControlTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RotaryCustomControlTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		22822F6C1385618D00C1B36B /* RotaryCustomControlTests-Info.plist */ = {isa = PBXFileReference; path = "RotaryCustomControlTests-Info.plist"; sourceTree = "<group>"; };
+		22822F6C1385618D00C1B36B /* RotaryCustomControlTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RotaryCustomControlTests-Info.plist"; sourceTree = "<group>"; };
 		22822F6E1385618D00C1B36B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		22822F701385618D00C1B36B /* RotaryCustomControlTests-Prefix.pch */ = {isa = PBXFileReference; path = "RotaryCustomControlTests-Prefix.pch"; sourceTree = "<group>"; };
+		22822F701385618D00C1B36B /* RotaryCustomControlTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RotaryCustomControlTests-Prefix.pch"; sourceTree = "<group>"; };
 		22822F711385618D00C1B36B /* RotaryCustomControlTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RotaryCustomControlTests.h; sourceTree = "<group>"; };
 		22822F731385618D00C1B36B /* RotaryCustomControlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RotaryCustomControlTests.m; sourceTree = "<group>"; };
+		22822F7D1385647F00C1B36B /* RotaryControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotaryControl.h; sourceTree = "<group>"; };
+		22822F7E1385647F00C1B36B /* RotaryControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotaryControl.m; sourceTree = "<group>"; };
+		22822F82138567A000C1B36B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22822F83138567A000C1B36B /* QuartzCore.framework in Frameworks */,
 				22822F451385618D00C1B36B /* UIKit.framework in Frameworks */,
 				22822F471385618D00C1B36B /* Foundation.framework in Frameworks */,
 				22822F491385618D00C1B36B /* CoreGraphics.framework in Frameworks */,
@@ -84,6 +90,7 @@
 		22822F351385618C00C1B36B = {
 			isa = PBXGroup;
 			children = (
+				22822F82138567A000C1B36B /* QuartzCore.framework */,
 				22822F4A1385618D00C1B36B /* RotaryCustomControl */,
 				22822F6A1385618D00C1B36B /* RotaryCustomControlTests */,
 				22822F431385618D00C1B36B /* Frameworks */,
@@ -120,6 +127,8 @@
 				22822F5A1385618D00C1B36B /* RotaryCustomControlViewController.m */,
 				22822F5C1385618D00C1B36B /* RotaryCustomControlViewController.xib */,
 				22822F4B1385618D00C1B36B /* Supporting Files */,
+				22822F7D1385647F00C1B36B /* RotaryControl.h */,
+				22822F7E1385647F00C1B36B /* RotaryControl.m */,
 			);
 			path = RotaryCustomControl;
 			sourceTree = "<group>";
@@ -266,6 +275,7 @@
 				22822F521385618D00C1B36B /* main.m in Sources */,
 				22822F551385618D00C1B36B /* RotaryCustomControlAppDelegate.m in Sources */,
 				22822F5B1385618D00C1B36B /* RotaryCustomControlViewController.m in Sources */,
+				22822F7F1385647F00C1B36B /* RotaryControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
