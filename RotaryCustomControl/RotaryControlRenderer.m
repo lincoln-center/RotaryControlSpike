@@ -30,7 +30,7 @@
     CGContextSaveGState(ctx);
 
     CGContextSetLineWidth(ctx, 1.0f);
-    for (NSInteger i=0; i<360; i++) {
+    for (CGFloat i=0; i<360; i+=0.5f) {
         CGFloat angle = i *  M_PI / 180.f;
         CGMutablePathRef path = CGPathCreateMutable();
         CGFloat dataHeight = (rand()%100) + 20.f;
@@ -39,9 +39,9 @@
 
         CGContextBeginPath(ctx);
         CGContextAddPath(ctx, path);
-        if (i%3==0) {
+        if (abs(i)%3==0) {
             CGContextSetStrokeColorWithColor(ctx, [UIColor redColor].CGColor);
-        } else if (i%3==1) {
+        } else if (abs(i)%3==1) {
             CGContextSetStrokeColorWithColor(ctx, [UIColor blueColor].CGColor);
         } else {
             CGContextSetStrokeColorWithColor(ctx, [UIColor greenColor].CGColor);
@@ -50,6 +50,18 @@
 
         CFRelease(path);
     }
+
+    //Center cap
+    CGFloat smallCapRadius = halfWidth/2.f;
+    CGRect ellipseBox = CGRectMake(halfWidth - (smallCapRadius/2.f), halfHeight - (smallCapRadius/2.f), smallCapRadius, smallCapRadius);
+    CGContextSetFillColorWithColor(ctx, [UIColor whiteColor].CGColor);
+    CGContextFillEllipseInRect(ctx, ellipseBox);
+    CGContextSetStrokeColorWithColor(ctx, [UIColor grayColor].CGColor);
+    CGContextStrokeEllipseInRect(ctx, ellipseBox);
+
+    //Outer circumference
+    CGFloat bigCapRadius = (halfWidth*2.f) - 5.0f;
+    CGContextStrokeEllipseInRect(ctx, CGRectMake(halfWidth - (bigCapRadius/2.f), halfHeight - (bigCapRadius/2.f), bigCapRadius, bigCapRadius));
 
     CGContextRestoreGState(ctx);
 }
