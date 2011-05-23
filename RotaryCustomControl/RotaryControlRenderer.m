@@ -12,6 +12,8 @@
 @implementation RotaryControlRenderer
 
 static CGFloat data[720];
+static CGFloat costable[720];
+static CGFloat sintable[720];
 
 +(RotaryControlRenderer *)rendererWithWidth:(CGFloat)width andHeight:(CGFloat)height {
     return [[[RotaryControlRenderer alloc] initWithWidth:width andHeight:height] autorelease];
@@ -22,8 +24,10 @@ static CGFloat data[720];
     if (self) {
         halfWidth = width/2.f;
         halfHeight = height/2.f;
-        for (int i=0; i<720; i++) {
+        for (int i=0; i<360; i++) {
             data[i] = (rand()%100) + 20.f;
+            costable[i] = cosf(i * M_PI / 180.f);
+            sintable[i] = sinf(i * M_PI / 180.f);
         }
     }
     return self;
@@ -35,11 +39,12 @@ static CGFloat data[720];
     CGContextSaveGState(ctx);
 
     CGContextSetLineWidth(ctx, 1.0f);
-    for (CGFloat i=0; i<360; i+=0.5f) {
-        CGFloat angle = i *  M_PI / 180.f;
+    for (NSInteger i=0; i<360; i+=1) {
         CGMutablePathRef path = CGPathCreateMutable();
-        CGFloat dataHeight = data[abs(i*2)];
-        CGPoint points[2] = {{halfWidth, halfHeight}, {halfWidth + (dataHeight * cos(angle)), halfHeight + (dataHeight * sin(angle))}};
+        CGFloat dataHeight = data[i];
+        CGFloat cosAngle = costable[i];
+        CGFloat sinAngle = sintable[i];
+        CGPoint points[2] = {{halfWidth, halfHeight}, {halfWidth + (dataHeight * cosAngle), halfHeight + (dataHeight * sinAngle)}};
         CGPathAddLines(path, &CGAffineTransformIdentity, points, 2);
 
         CGContextBeginPath(ctx);
